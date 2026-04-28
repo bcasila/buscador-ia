@@ -1,43 +1,52 @@
-# Assistente de Busca Acadêmica com IA (ADS)
-Este projeto é um agente de inteligência artificial local projetado para buscar materiais acadêmicos, 
-livros e artigos de forma gratuita e legal.
+# PRIMEIRO ACESSO
 
-# Tecnologias Utilizadas
-O projeto foi construído utilizando uma arquitetura moderna de agentes de IA:
-Linguagem: Python 3.10+ - Base para toda a lógica de automação e integração.
-Orquestração de IA: LangChain - Framework que conecta o modelo de linguagem (LLM) às ferramentas de busca externa.
-Modelo de Linguagem (LLM): Ollama (Llama 3.2 1B) - Processamento de linguagem natural rodando localmente para 
-garantir privacidade e baixo custo.
-Busca Acadêmica: ArXiv API - Repositório científico utilizado para buscar artigos e livros técnicos gratuitos.
-Manipulação de Dados: Pandas e [Datetime] - Para organização das informações e geração dos relatórios de log.
+1. Baixe e instale o Ollama:
+https://ollama.com
 
-# Requisitos de Instalação
-1. Motor de IA (Ollama)
-O projeto utiliza o Ollama para rodar modelos de linguagem localmente.
-Baixe e instale o Ollama em ollama.com.
-No terminal, baixe o modelo leve (ideal para máquinas com até 8GB de RAM):
+2. Após instalar, abra o terminal e execute:
+
+    ollama run llama3
+
+Se der erro por falta de memória RAM, use:
+
     ollama run llama3.2:1b
-2. Ambiente Python
-Com o Python instalado, siga os passos na pasta do projeto:
-Configurar permissão (Windows): Caso o script de ativação seja bloqueado, execute no PowerShell:
+
+Esse comando baixará o modelo de IA que rodará no seu computador.
+
+3. Abra a pasta do projeto no terminal e, se necessário no Windows, execute:
+
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-Criar e Ativar o Ambiente Virtual:
-    python -m venv venv
+
+4. Ative o ambiente virtual:
+
     .\venv\Scripts\activate
-Instalar Dependências:
+
+Quando aparecer (venv), instale todas as dependências necessárias:
+
+    pip install langchain
+    pip install langchain-community
+    pip install langchain-ollama
+    pip install arxiv
+    pip install geopy
+    pip install pandas
+
+Ou tudo de uma vez:
+
     pip install langchain langchain-community langchain-ollama arxiv geopy pandas
 
-# Como Utilizar
-Iniciar o Sistema
-Sempre que desejar usar o buscador, certifique-se de que o Ollama está aberto e execute:
-Ative o ambiente: .\venv\Scripts\activate
-Rode o programa: python buscador.py
 
-Funcionalidades
-Busca Inteligente: IA converte temas em palavras-chave técnicas.
-Acervos Gratuitos: Filtros automáticos para materiais Open Access.
-Relatórios: Cada busca gera um log automático no arquivo relatorio_buscas.txt.
+# PRÓXIMOS ACESSOS
 
-Finalizar
-Para encerrar o ambiente virtual:
+Abra o terminal na pasta do projeto e execute:
+
+    .\venv\Scripts\activate
+
+
+# PARA INICIAR O BUSCADOR
+
+    python buscador.py
+
+
+# PARA SAIR DO AMBIENTE VIRTUAL
+
     deactivate
