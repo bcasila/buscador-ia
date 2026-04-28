@@ -1,0 +1,8 @@
+No cmd Ctrl+' :
+
+.\venv\Scripts\activate
+
+python buscador.py
+
+Para sair:
+deactivate
