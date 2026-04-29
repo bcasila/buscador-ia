@@ -1,3 +1,15 @@
+📚 Assistente Acadêmico com IA
+
+Sistema para busca de livros e materiais acadêmicos gratuitos, utilizando IA local e interface web interativa.
+
+# FUNCIONALIDADES
+-- Busca inteligente de conteúdos acadêmicos
+-- Uso de IA local com Ollama
+-- Integração com ArXiv (materiais gratuitos)
+-- Atalhos para plataformas como SciELO, DOAB e Google Scholar
+--Sugestões de bibliotecas públicas
+-- Geração automática de relatórios
+-- Download do relatório diretamente pela interface
 # PRIMEIRO ACESSO
 
 1. Baixe e instale o Ollama:
@@ -50,3 +62,19 @@ Abra o terminal na pasta do projeto e execute:
 # PARA SAIR DO AMBIENTE VIRTUAL
 
     deactivate
+# COMO EXECUTAR O SISTEMA (INTERFACE WEB)
+ 1. Iniciar o Ollama
+ollama run llama3.2:1b
+ 2. Executar o frontend com Streamlit
+streamlit run app.py
+
+- Esse comando irá abrir automaticamente o sistema no navegador.
+
+ 3. Acessar no navegador (caso não abra automaticamente)
+
+http://localhost:8501
+
+# Observações
+- O Ollama precisa estar rodando para que a IA funcione corretamente
+- A busca pode ser mais lenta devido ao processamento local da IA
+- O sistema prioriza conteúdos acadêmicos gratuitos e de acesso legal
