@@ -1,1 +1,91 @@
 
+============================================================
+SESSÃO DE ESTUDOS: 29/04/2026 13:56:45
+TEMA PESQUISADO: python
+------------------------------------------------------------
+CONTEÚDO ENCONTRADO:
+
+Published: 2025-08-13
+Title: Microwave Engineering of Tunable Spin Interactions with Superconducting Qubits
+Authors: Kui Zhao, Ziting Wang, Yu Liu, Gui - Han Liang, Cai - Ping Fang, Yun - Hao Shi, Lv Zhang, Jia - Chi Zhang, Tian - Ming Li, Hao Li, Yueshan Xu, Wei - Guo Ma, Hao - Tian Liu, Jia - Cheng Song, Zhen - Ting Bao, Yong - Xi Xiao, Bing - Jie Chen, Cheng - Lin Deng, Zheng - He Liu, Yang He, Si - Yun Zhou, Xiaohui Song, Zhongcheng Xiang, Dongning Zheng, Kaixuan Huang, Kai Xu, Heng Fan
+Summary: Quantum simulation has emerged as a powerful framework for investigating complex many - body phenomena. A key requirement for emulating these dynamics is the realization of fully controllable quantum systems enabling various spin interactions. Yet, quantum simulators remain constrained in the types of attainable interactions. Here we demonstrate experimental realization of multiple microwave - engineered spin interactions in superconducting quantum circuits. By precisely controlling the native XY interaction and microwave drives, we achieve tunable spin Hamiltonians including: (i) XYZ spin models with continuously adjustable parameters, (ii) transverse - field Ising systems, and (iii) Dzyaloshinskii - Moriya interacting systems. Our work expands the toolbox for analogue - digital quantum simulation, enabling exploration of a wide range of exotic quantum spin models.
+
+Published: 2020-10-28
+Title: ePython: An implementation of Python for the many-core Epiphany coprocessor
+Authors: Nick Brown
+Summary: The Epiphany is a many-core, low power, low on-chip memory architecture and one can very cheaply gain access to a number of parallel cores which is beneficial for HPC education and prototyping. The very low power nature of these architectures also means that there is potential for their use in future HPC machines, however there is a high barrier to entry in programming them due to the associated complexities and immaturity of supporting tools.
+  In this paper we present our work on ePython, a subset of Python for the Epiphany and similar many-core co-processors. Due to the limited on-chip memory per core we have developed a new Python interpreter and this, combined with additional support for parallelism, has meant that novices can take advantage of Python to very quickly write parallel codes on the Epiphany and explore concepts of HPC using a smaller scale parallel machine. The high level nature of Python opens up new possibilities on the Epiphany, we examine a computationally intensive Gauss-Seidel code from the programmability and performance perspective, discuss running Python hybrid on both the host CPU and Epiphany, and interoperability between a full Python interpreter on the CPU and ePython on the Epiphany. The result of this work is support for developing Python on the Epiphany, which can be applied to other similar architectures, that the community have already started to adopt and use to explore concepts of parallelism and HPC.
+
+Published: 2021-02-05
+Title: Social Network Analysis: From Graph Theory to Applications with Python
+Authors: Dmitri Goldenberg
+Summary: Social network analysis is the process of investigating social structures through the use of networks and graph theory. It combines a variety of techniques for analyzing the structure of social networks as well as theories that aim at explaining the underlying dynamics and patterns observed in these structures. It is an inherently interdisciplinary field which originally emerged from the fields of social psychology, statistics and graph theory. This talk will covers the theory of social network analysis, with a short introduction to graph theory and information spread. Then we will deep dive into Python code with NetworkX to get a better understanding of the network components, followed-up by constructing and implying social networks from real Pandas and textual datasets. Finally we will go over code examples of practical use-cases such as visualization with matplotlib
+============================================================
+
+============================================================
+SESSÃO DE ESTUDOS: 29/04/2026 14:04:54
+TEMA PESQUISADO: python
+------------------------------------------------------------
+CONTEÚDO ENCONTRADO:
+
+Published: 2025-08-13
+Title: Microwave Engineering of Tunable Spin Interactions with Superconducting Qubits
+Authors: Kui Zhao, Ziting Wang, Yu Liu, Gui - Han Liang, Cai - Ping Fang, Yun - Hao Shi, Lv Zhang, Jia - Chi Zhang, Tian - Ming Li, Hao Li, Yueshan Xu, Wei - Guo Ma, Hao - Tian Liu, Jia - Cheng Song, Zhen - Ting Bao, Yong - Xi Xiao, Bing - Jie Chen, Cheng - Lin Deng, Zheng - He Liu, Yang He, Si - Yun Zhou, Xiaohui Song, Zhongcheng Xiang, Dongning Zheng, Kaixuan Huang, Kai Xu, Heng Fan
+Summary: Quantum simulation has emerged as a powerful framework for investigating complex many - body phenomena. A key requirement for emulating these dynamics is the realization of fully controllable quantum systems enabling various spin interactions. Yet, quantum simulators remain constrained in the types of attainable interactions. Here we demonstrate experimental realization of multiple microwave - engineered spin interactions in superconducting quantum circuits. By precisely controlling the native XY interaction and microwave drives, we achieve tunable spin Hamiltonians including: (i) XYZ spin models with continuously adjustable parameters, (ii) transverse - field Ising systems, and (iii) Dzyaloshinskii - Moriya interacting systems. Our work expands the toolbox for analogue - digital quantum simulation, enabling exploration of a wide range of exotic quantum spin models.
+
+Published: 2020-03-31
+Title: Machine Learning in Python: Main developments and technology trends in data science, machine learning, and artificial intelligence
+Authors: Sebastian Raschka, Joshua Patterson, Corey Nolet
+Summary: Smarter applications are making better use of the insights gleaned from data, having an impact on every industry and research discipline. At the core of this revolution lies the tools and the methods that are driving it, from processing the massive piles of data generated each day to learning from and taking useful action. Deep neural networks, along with advancements in classical ML and scalable general-purpose GPU computing, have become critical components of artificial intelligence, enabling many of these astounding breakthroughs and lowering the barrier to adoption. Python continues to be the most preferred language for scientific computing, data science, and machine learning, boosting both performance and productivity by enabling the use of low-level libraries and clean high-level APIs. This survey offers insight into the field of machine learning with Python, taking a tour through important topics to identify some of the core hardware and software paradigms that have enabled it. We cover widely-used libraries and concepts, collected together for holistic comparison, with the goal of educating the reader and driving the field of Python machine learning forward.
+
+Published: 2023-06-07
+Title: Changing Data Sources in the Age of Machine Learning for Official Statistics
+Authors: Cedric De Boom, Michael Reusens
+Summary: Data science has become increasingly essential for the production of official statistics, as it enables the automated collection, processing, and analysis of large amounts of data. With such data science practices in place, it enables more timely, more insightful and more flexible reporting. However, the quality and integrity of data-science-driven statistics rely on the accuracy and reliability of the data sources and the machine learning techniques that support them. In particular, changes in data sources are inevitable to occur and pose significant risks that are crucial to address in the context of machine learning for official statistics.
+  This paper gives an overview of the main risks, liabilities, and uncertainties associated with changing data sources in the context of machine learning for official statistics. We provide a checklist of the most prevalent origins and causes of changing data sources; not only on a technical level but also regarding ownership, ethics, regulation, and public perception. Next, we highlight the
+============================================================
+
+============================================================
+SESSÃO DE ESTUDOS: 29/04/2026 14:06:01
+TEMA PESQUISADO: tecnologia
+------------------------------------------------------------
+CONTEÚDO ENCONTRADO:
+
+Published: 2022-12-03
+Title: Computer and Internet Literacy Course of the College of Computer Science for the Municipality of Agoo, La Union
+Authors: Clarisa V. Albarillo, Emely A. Munar, Maria Concepcion M. Balcita
+Summary: The main objective of the study is to provide ICT awareness, literacy and skills development to the barangay officials of Agoo, La Union. Specifically, it aimed the following objectives: 1) to determine the profile of the respondents in terms of personal information, educational background and availability of computer unit and background in using computer; 2) to determine the effectiveness of the CILC in terms of services delivered, timeliness of the service, and improvement on the computer and internet knowledge of the trainees; and 3) to determine the level of relevance of the training sessions of the CILC. The study used a descriptive design. Data were gathered by using survey questionnaire and were analyzed by using statistical treatments such as frequency count, percentage and mean. As to the profile of the trainees, the study found that most of the trainees are female (88%); 84% are married, and 56% of them are at the age bracket of 30-39 years old. In terms of educational background, many are high school graduate (n= 17; 68%). In addition, most of them (84%) have background in computer. The result also shows that the CILC is at the high level of effectiveness (4.67) in terms of services delivered and is much relevant (4.45) in terms of its relevance.
+
+Published: 2020-09-22
+Title: Sense-Deliberate-Act Cognitive Agents for Sense-Compute-Control Applications in the Internet of Things & Services
+Authors: Armin Moin
+Summary: In this paper, we advocate Agent-Oriented Software Engi-neering (AOSE) through employing Belief-Desire-Intention (BDI) intel-ligent agents for developing Sense-Compute-Control (SCC) applications in the Internet of Things and Services (IoTS). We argue that not only the agent paradigm, in general, but also cognitive BDI agents with sense-deliberate-act cycle, in particular, fit very well to the nature of SCC applications in the IoTS. However, considering the highly constrained heterogeneous devices that are prevalent in the IoTS, existing BDI agent frameworks, even those especially created for Wireless Sensor Networks (WSNs), do not work. We elaborate on the challenges and propose pos-sible approaches to address them.
+
+Published: 2023-11-07
+Title: Access-based Lightweight Physical Layer Authentication for the Internet of Things Devices
+Authors: Saud Khan, Chandra Thapa, Salman Durrani, Seyit Camtepe
+Summary: Physical-layer authentication is a popular alternative to the conventional key-based authentication for internet of things (IoT) devices due to their limited computational capacity and battery power. However, this approach has limitations due to poor robustness under channel fluctuations, reconciliation overhead, and no clear safeguard distance to ensure the secrecy of the generated authentication keys. In this regard, we propose a novel, secure, and lightweight continuous authentication scheme for IoT device authentication. Our scheme utilizes the inherent properties of the IoT devices' transmission model as its source for seed generation and device authentication. Specifically, our proposed scheme provides continuous authentication by checking the access time slots and spreading sequences of the IoT devices instead of repeatedly generating and verifying shared keys. Due to this, access to a coherent key is not required in our proposed scheme, resulting in the concealment of the seed information from attackers. Our proposed authentication scheme for IoT devices demonstrates improved performance compared to the benchmark schemes relying on physical channels. Our empirical results find a near threefold decrease in the misdetection rate of illegitimate devices and close to zero false alarm rate in various system settings with varied numbers of active devices up to 200 and signal-to-n
+============================================================
+
+============================================================
+SESSÃO DE ESTUDOS: 29/04/2026 14:15:01
+TEMA PESQUISADO: python
+------------------------------------------------------------
+CONTEÚDO ENCONTRADO:
+
+Published: 2025-08-13
+Title: Microwave Engineering of Tunable Spin Interactions with Superconducting Qubits
+Authors: Kui Zhao, Ziting Wang, Yu Liu, Gui - Han Liang, Cai - Ping Fang, Yun - Hao Shi, Lv Zhang, Jia - Chi Zhang, Tian - Ming Li, Hao Li, Yueshan Xu, Wei - Guo Ma, Hao - Tian Liu, Jia - Cheng Song, Zhen - Ting Bao, Yong - Xi Xiao, Bing - Jie Chen, Cheng - Lin Deng, Zheng - He Liu, Yang He, Si - Yun Zhou, Xiaohui Song, Zhongcheng Xiang, Dongning Zheng, Kaixuan Huang, Kai Xu, Heng Fan
+Summary: Quantum simulation has emerged as a powerful framework for investigating complex many - body phenomena. A key requirement for emulating these dynamics is the realization of fully controllable quantum systems enabling various spin interactions. Yet, quantum simulators remain constrained in the types of attainable interactions. Here we demonstrate experimental realization of multiple microwave - engineered spin interactions in superconducting quantum circuits. By precisely controlling the native XY interaction and microwave drives, we achieve tunable spin Hamiltonians including: (i) XYZ spin models with continuously adjustable parameters, (ii) transverse - field Ising systems, and (iii) Dzyaloshinskii - Moriya interacting systems. Our work expands the toolbox for analogue - digital quantum simulation, enabling exploration of a wide range of exotic quantum spin models.
+
+Published: 2020-03-31
+Title: Machine Learning in Python: Main developments and technology trends in data science, machine learning, and artificial intelligence
+Authors: Sebastian Raschka, Joshua Patterson, Corey Nolet
+Summary: Smarter applications are making better use of the insights gleaned from data, having an impact on every industry and research discipline. At the core of this revolution lies the tools and the methods that are driving it, from processing the massive piles of data generated each day to learning from and taking useful action. Deep neural networks, along with advancements in classical ML and scalable general-purpose GPU computing, have become critical components of artificial intelligence, enabling many of these astounding breakthroughs and lowering the barrier to adoption. Python continues to be the most preferred language for scientific computing, data science, and machine learning, boosting both performance and productivity by enabling the use of low-level libraries and clean high-level APIs. This survey offers insight into the field of machine learning with Python, taking a tour through important topics to identify some of the core hardware and software paradigms that have enabled it. We cover widely-used libraries and concepts, collected together for holistic comparison, with the goal of educating the reader and driving the field of Python machine learning forward.
+
+Published: 2021-03-03
+Title: Machine Learning using Stata/Python
+Authors: Giovanni Cerulli
+Summary: We present two related Stata modules, r_ml_stata and c_ml_stata, for fitting popular Machine Learning (ML) methods both in regression and classification settings. Using the recent Stata/Python integration platform (sfi) of Stata 16, these commands provide hyper-parameters' optimal tuning via K-fold cross-validation using greed search. More specifically, they make use of the Python Scikit-learn API to carry out both cross-validation and outcome/label prediction.
+============================================================
+
