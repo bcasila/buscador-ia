@@ -22,7 +22,19 @@ def realizar_busca_inteligente(tema):
     """
     print(f"\n[Monitor ADS] Analisando o tema: {tema}...")
     
-    prompt = f"keywords: {tema}. Return only 3 keywords in English, no text."
+    prompt = f"""
+    Extract exactly 3 keywords from this topic: {tema}
+
+    Rules:
+    - Only return 3 words
+    - No code
+    - No explanations
+    - No symbols
+    - Separate with commas
+
+    Example:
+    AI, Machine Learning, Neural Networks
+    """
     keywords = llm.invoke(prompt).strip() # .strip() remove espaços vazios inúteis
     
     print(f"[IA] Buscando por: {keywords}")    
@@ -54,7 +66,6 @@ def obter_atalhos_e_locais(tema):
     
     return atalhos, info_bibliotecas
 
-# Gerar PDF
 def gerar_relatorio(tema, resultados):
     """
     Registra a busca em um arquivo de log histórico (Requisito 5).
@@ -74,6 +85,7 @@ def gerar_relatorio(tema, resultados):
     
     print(f"\n[Sistema] Relatório atualizado com sucesso em: {nome_arquivo}")
 
+# Gerar PDF
 def gerar_relatorio_pdf(tema, resultados):
     nome_arquivo = "relatorio_buscas.pdf"
 
@@ -131,3 +143,12 @@ if __name__ == "__main__":
     
     print("\n" + "="*50)
     print("Dica Legal: Conteúdo distribuído legalmente.")
+
+    # Gerar PDF pergunta
+    opcao_pdf = input("\nDeseja gerar relatório em PDF? (s/n): ").strip().lower()
+
+    if opcao_pdf == "s":
+        arquivo_pdf = gerar_relatorio_pdf(assunto, resultados_ia)
+        print(f"[Sistema] PDF gerado com sucesso em: {arquivo_pdf}")
+    else:
+        print("[Sistema] PDF não gerado.")
