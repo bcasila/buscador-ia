@@ -5,7 +5,8 @@ from datetime import datetime
 from buscador import (
     realizar_busca_inteligente,
     obter_atalhos_e_locais,
-    gerar_relatorio
+    gerar_relatorio,
+    gerar_relatorio_pdf
 )
 
 # Configuração da página
@@ -16,10 +17,12 @@ st.title("📚 Assistente Acadêmico ADS")
 st.write("Busque materiais acadêmicos gratuitos com IA")
 
 # Campo de entrada
-tema = st.text_input("Digite um tema:")
+with st.form("form_busca"):
+    tema = st.text_input("Digite um tema:")
+    submit = st.form_submit_button("Buscar")
 
 # Botão de busca
-if st.button("Buscar"):
+if submit:
     if tema.strip() != "":
 
         with st.spinner("Buscando..."):
@@ -48,6 +51,8 @@ if st.button("Buscar"):
         gerar_relatorio(tema, resultados)
         st.success("Relatório gerado com sucesso!")
 
+        btt1, btt2 = st.columns(2)
+
         #  BOTÃO DE DOWNLOAD
         nome_arquivo = "relatorio_buscas.txt"
 
@@ -63,6 +68,20 @@ if st.button("Buscar"):
             )
         else:
             st.warning("Relatório ainda não foi gerado.")
+
+        # GERAR PDF
+        arquivo_pdf = gerar_relatorio_pdf(tema, resultados)
+
+        if os.path.exists(arquivo_pdf):
+            with open(arquivo_pdf, "rb") as f:
+                pdf_bytes = f.read()
+
+            st.download_button(
+                label="📄 Baixar relatório em PDF",
+                data=pdf_bytes,
+                file_name=f"relatorio_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.pdf",
+                mime="application/pdf"
+            )
 
     else:
         st.warning("Digite um tema!")

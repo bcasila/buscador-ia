@@ -4,6 +4,8 @@ from langchain_ollama import OllamaLLM
 # Importamos o buscador do ArXiv (nosso acervo de livros e artigos gratuitos)
 from langchain_community.utilities import ArxivAPIWrapper
 from datetime import datetime
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
 
 # 1. CONFIGURAÇÃO DO CÉREBRO (IA LOCAL)
 # Aqui dizemos ao Python para usar o modelo leve que baixamos para não travar seu PC
@@ -52,6 +54,7 @@ def obter_atalhos_e_locais(tema):
     
     return atalhos, info_bibliotecas
 
+# Gerar PDF
 def gerar_relatorio(tema, resultados):
     """
     Registra a busca em um arquivo de log histórico (Requisito 5).
@@ -70,6 +73,34 @@ def gerar_relatorio(tema, resultados):
         arquivo.write("\n" + "=" * 60 + "\n\n")
     
     print(f"\n[Sistema] Relatório atualizado com sucesso em: {nome_arquivo}")
+
+def gerar_relatorio_pdf(tema, resultados):
+    nome_arquivo = "relatorio_buscas.pdf"
+
+    doc = SimpleDocTemplate(nome_arquivo)
+    styles = getSampleStyleSheet()
+
+    conteudo = []
+
+    conteudo.append(Paragraph("Assistente Acadêmico ADS", styles["Title"]))
+    conteudo.append(Spacer(1, 12))
+
+    data = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    conteudo.append(Paragraph(f"Data: {data}", styles["Normal"]))
+    conteudo.append(Spacer(1, 12))
+
+    conteudo.append(Paragraph(f"Tema: {tema}", styles["Heading2"]))
+    conteudo.append(Spacer(1, 12))
+
+    conteudo.append(Paragraph("Resultados:", styles["Heading3"]))
+    conteudo.append(Spacer(1, 12))
+
+    resultados_formatados = resultados.replace("\n", "<br/>")
+    conteudo.append(Paragraph(resultados_formatados, styles["Normal"]))
+
+    doc.build(conteudo)
+
+    return nome_arquivo
 
 # 3. INTERFACE DO PROGRAMA (O QUE VOCÊ VÊ NA TELA)
 if __name__ == "__main__":
